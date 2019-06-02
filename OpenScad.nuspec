@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>openscad</id>
+    <title>openscad - The Programmers Solid 3D CAD Modeller</title>
+    <version>2019.05</version>
+    <authors>OpenSCAD</authors>
+    <owners>Jason Briggs</owners>
+    <summary>OpenSCAD is a software for creating solid 3D CAD objects.</summary>
+    <description>OpenSCAD is a software for creating solid 3D CAD models. It is free software and available for Linux/UNIX, Windows and Mac OS X. Unlike most free software for creating 3D models (such as Blender) it does not focus on the artistic aspects of 3D modelling but instead on the CAD aspects. Thus it might be the application you are looking for when you are planning to create 3D models of machine parts but pretty sure is not what you are looking for when you are more interested in creating computer-animated movies. 
+    OpenSCAD is not an interactive modeller. Instead it is something like a 3D-compiler that reads in a script file that describes the object and renders the 3D model from this script file. This gives you (the designer) full control over the modelling process and enables you to easily change any step in the modelling process or make designs that are defined by configurable parameters.
+OpenSCAD provides two main modelling techniques: First there is constructive solid geometry (aka CSG) and second there is extrusion of 2D outlines. As data exchange format format for this 2D outlines Autocad DXF files are used. In addition to 2D paths for extrusion it is also possible to read design parameters from DXF files. Besides DXF files OpenSCAD can read and create 3D models in the STL and OFF file formats.
+</description>
+
+<releaseNotes>
+Summary of changes:
+
+Language Features
+* Added assert() module and assert() function
+* Added let() module
+* Added ord() function
+* Added echo() function
+* Added type testing functions: is_undef(), is_list(), is_num(), is_bool(), is_string()
+* New special variable: $preview
+* List comprehension updates: if/else condition, each keyword, C-style for loop, looping over characters of a string
+* rotate_extrude(): Added angle parameter
+* import() now supports SVG, 3MF and AMF
+* color() now supports hex color codes
+
+
+Program Features
+
+* Customizer: Allow parametrizing design parameters with GUI customization
+* 3D-Mouse / Joystick / Gamepad support
+* 3D Printing support: Purchase from a print service partner or print to Octoprint
+* New export file formats: SVG, 3MF, AMF
+* Quick-edit and preview of values using Alt-Arrows (Shift-Alt-Arrows on macOS)
+* Added --view cmd-line parameter
+* Play sound notification on render complete
+* Revamped errors and warnings
+* New translations: Ukrainian, Polish
+
+Deprecations
+
+* Removed glide() and subdiv() which were never implemented
+</releaseNotes>
+
+<packageSourceUrl>https://github.com/OldNo7/openScadChocolateyInstaller</packageSourceUrl>
+    <projectUrl>http://openscad.org</projectUrl>
+    <tags>3D Printing Modelling CAD</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.openscad.org/about.html#license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/openscad/openscad/master/icons/icon.png</iconUrl>    
+
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
